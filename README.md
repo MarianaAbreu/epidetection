@@ -4,9 +4,10 @@ This repository was created to store the code for the project of Epilepsy Seizur
 
 ## Installation
 Go to <> code 
-1) use git clone copying the link (https should work)
+1) use git clone copying the link (https should work) \
 OR
-2) download the zip (another option below to store this repository on your computer.
+2) download the zip (another option below) \
+to store this repository on your computer.
 
 ## Notebooks
 
