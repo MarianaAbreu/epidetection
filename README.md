@@ -3,7 +3,10 @@ Epilepsy Seizure Detection Seer Database
 This repository was created to store the code for the project of Epilepsy Seizure Detection using the Seer Database.
 
 ## Installation
-Use git clone or download the zip to store this repository on your computer.
+Go to <> code 
+1) use git clone copying the link (https should work)
+OR
+2) download the zip (another option below to store this repository on your computer.
 
 ## Notebooks
 
