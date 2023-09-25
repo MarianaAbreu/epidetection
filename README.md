@@ -12,10 +12,19 @@ to store this repository on your computer.
 ## Notebooks
 
 ```in a jupyter notebook environment
-
 # open_edf_data.ipynb
 notebook to open an edf file from the database in a chosen directory
 
+# open_patient_data.ipynb
+notebook to get all data from a single patient
+```
+
+## Utils Scripts
+
+
+```python script
+# utils_patient.py
+script with all utils functions related to extracting data and info from patients of the Seer Database
 ```
 
 ## Contributing
