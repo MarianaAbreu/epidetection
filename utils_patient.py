@@ -85,7 +85,7 @@ class Patient():
             read_annotations['timestamp_start'] = read_annotations['start_time'].astype('datetime64[ms]') + offset
             read_annotations['timestamp_end'] = read_annotations['end_time'].astype('datetime64[ms]') + offset
             
-            print(f"Annotations file found \n {read_annotations}")
+            print(f"Annotations file found: {annot_file}")
             self.annotations = read_annotations
             return read_annotations
 
