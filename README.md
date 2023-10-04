@@ -17,6 +17,9 @@ notebook to open an edf file from the database in a chosen directory
 
 # open_patient_data.ipynb
 notebook to get all data from a single patient
+
+# extract_patient_features.ipynb
+notebook to guide segmentation around a chosen timestamp and feature extraction for that segments
 ```
 
 ## Utils Scripts
