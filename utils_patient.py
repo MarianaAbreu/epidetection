@@ -35,7 +35,6 @@ def read_edf(file):
     return data
 
 
-
 class Patient():
     # class to handle single patient data from Seer dataset
 
@@ -103,7 +102,7 @@ class Patient():
             raise ValueError(f"Sensor {sensor} not recognized, please use one of the following: bvp, temp, acc, eda, hr")
         # get all files names that exist inside patient's directory and contain the sensor name in uppercase
         # these files should be sorted by date (since the date is part of the file name, this should be ok)
-        sensor_files = sorted([file for file in os.listdir(self.pat_dir) if sensor in file.upper()])
+        sensor_files = sorted([file for file in os.listdir(self.pat_dir) if (sensor in file.upper() and file.endswith('.edf'))])
         if len(sensor_files) > 0:
             # this line extract the data from all sensor files and stacks all together in a dataframe table
             sensor_data = pd.concat(list(map(lambda file: read_edf(os.path.join(self.pat_dir, file)), sensor_files)))
@@ -142,6 +141,6 @@ if __name__ == "__main__":
     dir = 'data'
     patient_class = Patient(id=id, dir=dir)
     annotations = patient_class.get_seizures_annotations()
-    data = patient_class.get_sensor_data(sensor='acc')
+    data = patient_class.get_sensor_data(sensor='hr')
 
     pass
